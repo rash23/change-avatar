@@ -41,22 +41,22 @@ const BackgroundCard = ({
       )}
       {isDefault && <DefaultBadge />}
 
-      {/* Action buttons - show on hover */}
+      {/* Action buttons - show on hover on desktop, always visible on mobile */}
       {hasImage && !isGenerating && (
-        <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 gap-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="absolute bottom-1.5 left-1/2 flex -translate-x-1/2 gap-1.5 opacity-100 transition-opacity duration-300 sm:bottom-2 sm:gap-2 sm:opacity-0 sm:group-hover:opacity-100">
           <button
             onClick={handleLike}
-            className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-black/50 shadow-lg backdrop-blur-[10px] transition-all hover:scale-110 hover:bg-black/60"
+            className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/20 bg-black/50 shadow-lg backdrop-blur-[10px] transition-all hover:scale-110 hover:bg-black/60 sm:h-10 sm:w-10 sm:rounded-xl"
             aria-label="Like"
           >
-            <ThumbsUp className="h-5 w-5 text-white" strokeWidth={2.5} />
+            <ThumbsUp className="h-4 w-4 text-white sm:h-5 sm:w-5" strokeWidth={2.5} />
           </button>
           <button
             onClick={handleDislike}
-            className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-black/50 shadow-lg backdrop-blur-[10px] transition-all hover:scale-110 hover:bg-black/60"
+            className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/20 bg-black/50 shadow-lg backdrop-blur-[10px] transition-all hover:scale-110 hover:bg-black/60 sm:h-10 sm:w-10 sm:rounded-xl"
             aria-label="Dislike"
           >
-            <ThumbsDown className="h-5 w-5 text-white" strokeWidth={2.5} />
+            <ThumbsDown className="h-4 w-4 text-white sm:h-5 sm:w-5" strokeWidth={2.5} />
           </button>
         </div>
       )}

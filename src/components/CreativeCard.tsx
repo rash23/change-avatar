@@ -11,14 +11,14 @@ const CreativeCard = () => {
   }
 
   return (
-    <div className="relative inline-block">
+    <div className="relative inline-block w-full max-w-md sm:w-auto">
       <div className="relative rounded-2xl bg-white p-2 shadow-lg">
         <button
           onClick={handleChangeBackground}
-          className="absolute left-1/2 top-4 z-10 inline-flex h-[34px] w-button-change-bg -translate-x-1/2 items-center justify-center gap-1.5 overflow-hidden rounded-[10px] bg-black/20 px-2 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] transition-colors hover:bg-black/30"
+          className="absolute left-1/2 top-3 z-10 inline-flex h-[30px] w-[140px] -translate-x-1/2 items-center justify-center gap-1 overflow-hidden rounded-[10px] bg-black/20 px-2 shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] transition-colors hover:bg-black/30 sm:top-4 sm:h-[34px] sm:w-button-change-bg sm:gap-1.5"
         >
           <ChangeBackgroundIcon />
-          <span className="translate-y-[2px] text-xs font-semibold leading-none text-white">
+          <span className="translate-y-[1px] text-[11px] font-semibold leading-none text-white sm:translate-y-[2px] sm:text-xs">
             Change background
           </span>
         </button>

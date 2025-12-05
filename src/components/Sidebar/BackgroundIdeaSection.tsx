@@ -18,11 +18,11 @@ const BackgroundIdeaSection = ({
   onNext,
 }: BackgroundIdeaSectionProps) => {
   return (
-    <div className="space-y-3">
+    <div className="space-y-2 sm:space-y-3">
       <h3 className="text-sm font-semibold leading-[120%] text-black">
         Background idea
       </h3>
-      <div className="flex h-idea-section flex-col rounded-xl border border-border-light p-4">
+      <div className="flex h-40 flex-col rounded-xl border border-border-light p-3 sm:h-idea-section sm:p-4">
         <Textarea
           value={value}
           placeholder="Enter your background idea"

@@ -46,11 +46,11 @@ const Sidebar = () => {
       {isOpen && (
         <SheetContent
           side="right"
-          className="flex w-full flex-col p-0 px-5 py-8 sm:max-w-[400px]"
+          className="flex w-full flex-col p-0 px-4 py-6 sm:px-5 sm:py-8 sm:max-w-[400px]"
         >
           <SidebarHeader onClose={handleClose} />
 
-          <div className="flex-1 space-y-6 overflow-y-auto">
+          <div className="flex-1 space-y-4 overflow-y-auto sm:space-y-6">
             <BackgroundIdeaSection
               value={currentIdea}
               onChange={setCurrentIdea}
@@ -65,7 +65,7 @@ const Sidebar = () => {
               isGenerating={isGenerating}
             />
 
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
               <h3 className="text-sm font-semibold leading-[120%] text-black">
                 Your backgrounds
               </h3>

@@ -3,7 +3,7 @@ import Sidebar from './components/Sidebar'
 
 const App = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-300 p-4">
+    <div className="flex min-h-screen items-center justify-center bg-gray-300 p-2 sm:p-4">
       <CreativeCard />
       <Sidebar />
     </div>

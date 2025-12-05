@@ -12,8 +12,8 @@ const GeneratingOverlay = ({ progress, timeLeft }: GeneratingOverlayProps) => {
         <ProgressCircle progress={progress} />
       </div>
       {timeLeft && (
-        <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-          <p className="text-xs text-white">{timeLeft}</p>
+        <div className="absolute bottom-2 left-0 right-0 flex justify-center sm:bottom-4">
+          <p className="text-[10px] text-white sm:text-xs">{timeLeft}</p>
         </div>
       )}
     </div>

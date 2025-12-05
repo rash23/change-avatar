@@ -21,7 +21,7 @@ const GenerateButton = ({
     <Button
       onClick={onClick}
       disabled={disabled}
-      className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-black px-7 hover:bg-black/90 disabled:cursor-not-allowed disabled:opacity-50"
+      className="flex h-11 w-full items-center justify-center gap-2 rounded-full bg-black px-5 hover:bg-black/90 disabled:cursor-not-allowed disabled:opacity-50 sm:h-12 sm:px-7"
     >
       <SparklesIcon />
       <span className="text-sm font-semibold leading-[80%] text-white">

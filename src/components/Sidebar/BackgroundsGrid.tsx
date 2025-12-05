@@ -23,7 +23,7 @@ const BackgroundsGrid = ({
   }
 
   return (
-    <div className="flex flex-wrap gap-2 px-1">
+    <div className="grid grid-cols-2 gap-2 px-1 xs:grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap">
       {backgrounds.map(bg => (
         <BackgroundCard
           key={bg.id}

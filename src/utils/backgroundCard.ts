@@ -11,7 +11,7 @@ export const hasCardImage = (url?: string, progress?: number): boolean => {
 
 export const getCardClassName = (isDefault?: boolean): string => {
   return cn(
-    'group relative cursor-pointer h-card w-card overflow-hidden rounded-xl bg-muted transition-all duration-300 hover:scale-105 hover:z-10',
+    'group relative cursor-pointer aspect-[112/198] w-full overflow-hidden rounded-xl bg-muted transition-all duration-300 hover:scale-105 hover:z-10 md:h-card md:w-card md:aspect-auto',
     isDefault ? 'border-2 border-primary' : 'border-0'
   )
 }

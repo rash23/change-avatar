@@ -7,8 +7,8 @@ interface SidebarHeaderProps {
 
 const SidebarHeader = ({ onClose }: SidebarHeaderProps) => {
   return (
-    <div className="mb-6 flex items-center justify-between">
-      <h2 className="text-[22px] font-bold text-black">Change background</h2>
+    <div className="mb-4 flex items-center justify-between sm:mb-6">
+      <h2 className="text-lg font-bold text-black sm:text-[22px]">Change background</h2>
       <Button
         variant="ghost"
         size="icon"
